@@ -54,7 +54,7 @@ endclass
 
 <div align="center">
 
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-Expert-00d9ff?style=flat-square&logo=v&logoColor=black)
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-Proficient-00d9ff?style=flat-square&logoColor=black)
 ![UVM](https://img.shields.io/badge/UVM-Methodology-7c3aed?style=flat-square)
 ![Verilog](https://img.shields.io/badge/Verilog-RTL-00d9ff?style=flat-square)
 ![C++](https://img.shields.io/badge/C++-Simulator-00599C?style=flat-square&logo=cplusplus&logoColor=white)
