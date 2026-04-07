@@ -36,7 +36,6 @@ class Akhash extends VerificationEngineer;
   string  location     = "Brooklyn, NY";
   string  graduating   = "December 2026";
   string  seeking      = "Summer 2026 DV Internship";
-  string  philosophy   = "Trust is good. A testbench is better.";
 
   task run_phase();
     forever begin
@@ -101,16 +100,6 @@ endclass
 ### 🔷 SPI + I2C Protocol Verification
 > Self-checking scoreboards · Constrained-random read/write · Protocol corner-case coverage
 
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=7c3aed&text_color=ffffff" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&text_color=ffffff" />
-
-</div>
 
 ---
 
@@ -128,7 +117,5 @@ endclass
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,50:00d9ff,100:0a0a0a&height=100&section=footer"/>
 
 *"The bug existed before I found it. I just made it undeniable."*
-
-![Profile Views](https://komarev.com/ghpvc/?username=YOUR_USERNAME&color=00d9ff&style=flat-square)
 
 </div>
