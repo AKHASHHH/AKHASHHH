@@ -20,7 +20,7 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Akhash%20Krishna-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
-[![Email](https://img.shields.io/badge/NYU%20Email-ad7252%40nyu.edu-57069e?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ad7252@nyu.edu)
+[![Email](https://img.shields.io/badge/Email-NYU%20Mail-57069e?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ad7252@nyu.edu)
 
 </div>
 
