@@ -102,35 +102,34 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ### 🔷 [AXI-Lite Register Block Verification](https://github.com/AKHASHHH/AXI4-Lite-Register-Block-Verification-using-SystemVerilog-UVM)
 
-> UVM · RAL · SVA · Python Regression · Synopsys VCS
+> SystemVerilog · UVM · RAL · SVA · Synopsys VCS/URG
 
-- Built a UVM environment with drivers, monitors, sequences, a scoreboard, and a RAL model supporting front-door and back-door register access
-- Wrote SVA assertions checking VALID/READY handshakes, protocol legality, and register read/write consistency
-- Automated VCS regression in Python for compilation, seed management, and coverage collection
-- Reached **94.6% functional coverage across 4,730 randomized transactions**
+- Built a reusable UVM environment for a 32-bit AXI4-Lite register block with a scoreboard, functional coverage, RAL model, and monitor-driven prediction
+- Verified independent address/data ordering, backpressure, byte-write strobes, error responses, reset recovery, and front-door/back-door register access
+- Closed **100% of modeled functional coverage bins** and achieved **100% DUT line coverage** and **93.94% DUT branch coverage**
+- Completed the automated regression with **12/12 directed tests passing**, **0 UVM or RAL errors/fatals**, and **0 SVA failures**
 
 ---
 
 ### 🔷 [Formal Verification of Round-Robin Arbiter](https://github.com/AKHASHHH/Round-Robin-Arbiter-Formal-Verification-using-SystemVerilog-SVA)
 
-> SystemVerilog · SymbiYosys · Yosys · Safety · Liveness · k-Induction
+> SystemVerilog · SVA · Synopsys VC Formal · Safety · Bounded Fairness
 
-- Designed a four-requester round-robin arbiter with rotating priority and fairness-preserving grant logic
-- Verified mutual-exclusion safety and bounded-liveness properties
-- Checked that asserted requests receive a grant within a **4-cycle bound**
-- Used formal counterexamples to debug grant-priority issues
-- Applied **k-induction** to extend safety verification beyond bounded model checking
+- Designed and formally verified a four-requester round-robin arbiter with rotating priority and starvation-prevention guarantees
+- Developed **28 assertions** covering mutual exclusion, grant validity, priority selection, pointer transitions, and bounded fairness; proved **28/28** with **0 falsified**
+- Confirmed **26/26 implication-based properties were non-vacuous** and reached both formal cover scenarios
+- Injected a priority-order defect, used counterexamples to connect the immediate selection error to a fairness violation, then restored the RTL and re-proved the full suite
 
 ---
 
 ### 🔷 [Asynchronous FIFO for Clock Domain Crossing](https://github.com/AKHASHHH/Async-FIFO-CDC-Verification)
 
-> CDC · Gray-Code Synchronization · Constrained Random · Scoreboard · VCS
+> CDC · Gray-Code Synchronization · SVA · Synopsys VCS · VC Static · Verdi
 
-- Designed an asynchronous FIFO using Gray-coded read/write pointers and dual-flop synchronizers
-- Verified operation across independent and randomized read/write clock frequencies
-- Built a self-checking scoreboard using a reference queue to verify FIFO ordering
-- Reached **93.8% functional coverage across 73 randomized seeds**
+- Designed a parameterized asynchronous FIFO using Gray-coded pointers, two-flop synchronizers, and independent write/read clock domains
+- Verified ordering, overflow/underflow protection, pointer wraparound, and full/empty behavior with directed and concurrent randomized traffic plus **12 SVA properties**
+- Achieved **99 passing checks with 0 errors**, **0 assertion failures**, and **100% of defined write- and read-domain functional coverage bins**
+- Passed **100/100 random seeds** and **4/4 clock-ratio configurations**; proved both pointer data-loss checks and both Gray-reconvergence checks in VC Static, and debugged an injected full-detection defect in Verdi
 
 ---
 
