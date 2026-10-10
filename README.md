@@ -100,7 +100,7 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ## 🚀 Featured Projects
 
-### 🔷 AXI-Lite Register Block Verification
+### 🔷 [AXI-Lite Register Block Verification](https://github.com/AKHASHHH/AXI4-Lite-Register-Block-Verification-using-SystemVerilog-UVM)
 
 > UVM · RAL · SVA · Python Regression · Synopsys VCS
 
@@ -111,7 +111,7 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ---
 
-### 🔷 Formal Verification of Round-Robin Arbiter
+### 🔷 [Formal Verification of Round-Robin Arbiter](https://github.com/AKHASHHH/Round-Robin-Arbiter-Formal-Verification-using-SystemVerilog-SVA)
 
 > SystemVerilog · SymbiYosys · Yosys · Safety · Liveness · k-Induction
 
@@ -123,7 +123,7 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ---
 
-### 🔷 Asynchronous FIFO for Clock Domain Crossing
+### 🔷 [Asynchronous FIFO for Clock Domain Crossing](https://github.com/AKHASHHH/Async-FIFO-CDC-Verification)
 
 > CDC · Gray-Code Synchronization · Constrained Random · Scoreboard · VCS
 
@@ -131,6 +131,16 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - Verified operation across independent and randomized read/write clock frequencies
 - Built a self-checking scoreboard using a reference queue to verify FIFO ordering
 - Reached **93.8% functional coverage across 73 randomized seeds**
+
+---
+
+### 🔷 [Five-Stage Pipelined RISC-V Simulator](https://github.com/AKHASHHH/RISC-V-Simulator)
+
+> C++ · RISC-V · Five-Stage Pipeline · Hazard Handling
+
+- Built a cycle-accurate simulator for the IF, ID, EX, MEM, and WB pipeline stages
+- Implemented forwarding, load-use stalls, and branch and jump control-hazard handling
+- Added cycle-by-cycle pipeline state, register-file, and data-memory output logs
 
 ---
 
