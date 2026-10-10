@@ -233,3 +233,13 @@ Graduated **April 2024**
 *"The bug existed before I found it. I just made it undeniable."*
 
 </div>
+
+---
+
+## 👤 Author
+
+---
+
+**D. Akhash Krishna**
+
+GitHub: [AKHASHHH](https://github.com/AKHASHHH/AKHASHHH)
