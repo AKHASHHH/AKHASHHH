@@ -53,7 +53,7 @@ endclass
 
 I'm a Computer Engineering graduate student at **New York University** focused on **digital design and verification**.
 
-My work includes **UVM testbench development, SystemVerilog Assertions, constrained-random verification, functional coverage, register abstraction, formal verification, CDC, and regression automation**.
+My work includes **UVM testbench development, SystemVerilog Assertions, constrained-random verification, functional coverage, register abstraction, formal verification, CDC, mutation testing, and regression automation**.
 
 I'm currently looking for **full-time Design Verification Engineer opportunities** beginning around my **December 2026 graduation**.
 
@@ -80,6 +80,10 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 ![SymbiYosys](https://img.shields.io/badge/Formal-SymbiYosys-555555?style=flat-square)
 ![Yosys](https://img.shields.io/badge/Formal-Yosys-555555?style=flat-square)
 ![Git](https://img.shields.io/badge/Git-Version%20Control-F05032?style=flat-square&logo=git&logoColor=white)
+![VC Formal](https://img.shields.io/badge/Synopsys-VC%20Formal-red?style=flat-square)
+![VC Static](https://img.shields.io/badge/Synopsys-VC%20Static%20%2F%20SpyGlass%20CDC-red?style=flat-square)
+![URG](https://img.shields.io/badge/Synopsys-URG%20Coverage-red?style=flat-square)
+![Bash](https://img.shields.io/badge/Bash-Scripting-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
 
 </div>
 
@@ -94,7 +98,8 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - **RAL:** Front-door and back-door register access
 - **Formal Verification:** Safety properties, bounded liveness, counterexample analysis, and k-induction
 - **CDC:** Gray-coded pointers, synchronizers, and independent clock-domain verification
-- **Automation:** Python-based compilation, regression, seed management, and coverage collection
+- **Mutation Testing:** Controlled RTL fault injection, checker sensitivity analysis, assertion coverage, and waveform-based root-cause debugging
+- **Automation:** Python and Bash-based compilation, regression, seed management, and coverage collection
 
 ---
 
@@ -109,6 +114,18 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - Closed **100% of modeled functional coverage bins** and achieved **100% DUT line coverage** and **93.94% DUT branch coverage**
 - Completed the automated regression with **12/12 directed tests passing**, **0 UVM or RAL errors/fatals**, and **0 SVA failures**
 
+
+---
+
+### 🔷 [LLM-Generated SVA Mutation-Based Verification](https://github.com/AKHASHHH/LLM-Generated-SVA-Mutation-Based-Verification)
+
+> SystemVerilog · SVA · APB · Mutation Testing · Synopsys VCS / URG / Verdi
+
+- Evaluated **GPT- and Claude-generated assertion suites** against a frozen APB programmable timer specification using **10 deliberately injected RTL defects** and **8,348 simulation cycles**
+- Compared internal-state-aware and port-only checker contracts: both white-box suites detected **10/10 activated mutants**, while black-box GPT and Claude detected **1/9** and **2/9 port-observable mutants**, respectively
+- Analyzed assertion exercise using **VCS/URG**, audited mutation detection and reproducibility using **SHA-256**, and debugged prescaler, pending-flag, and IRQ-timing defects in **Verdi**
+- Validated two separate **AI-assisted, port-only supplemental assertions** targeting previously missed M07/M09 defects, with **zero reference-run failures** and **6/14 mutant assertion failures** respectively
+
 ---
 
 ### 🔷 [Formal Verification of Round-Robin Arbiter](https://github.com/AKHASHHH/Round-Robin-Arbiter-Formal-Verification-using-SystemVerilog-SVA)
@@ -119,6 +136,7 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - Developed **28 assertions** covering mutual exclusion, grant validity, priority selection, pointer transitions, and bounded fairness; proved **28/28** with **0 falsified**
 - Confirmed **26/26 implication-based properties were non-vacuous** and reached both formal cover scenarios
 - Injected a priority-order defect, used counterexamples to connect the immediate selection error to a fairness violation, then restored the RTL and re-proved the full suite
+
 
 ---
 
@@ -131,6 +149,7 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - Achieved **99 passing checks with 0 errors**, **0 assertion failures**, and **100% of defined write- and read-domain functional coverage bins**
 - Passed **100/100 random seeds** and **4/4 clock-ratio configurations**; proved both pointer data-loss checks and both Gray-reconvergence checks in VC Static, and debugged an injected full-detection defect in Verdi
 
+
 ---
 
 ### 🔷 [Five-Stage Pipelined RISC-V Simulator](https://github.com/AKHASHHH/RISC-V-Simulator)
@@ -141,16 +160,6 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 - Implemented forwarding, load-use stalls, and branch and jump control-hazard handling
 - Added cycle-by-cycle pipeline state, register-file, and data-memory output logs
 
----
-
-### 🔷 UART Controller with UVM Register Abstraction Layer
-
-> SystemVerilog · UVM · RAL · Error Injection
-
-- Designed a UART transmit/receive controller with memory-mapped baud-rate, parity, and control/status registers
-- Developed a UVM environment with a RAL model supporting front-door and back-door register access
-- Injected parity and framing errors to verify error detection and corresponding status-register behavior
-- Executed **347 directed and randomized test cases**
 
 ---
 
@@ -160,11 +169,11 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ### Languages
 
-`C` · `C++` · `Python` · `Tcl` · `Verilog` · `SystemVerilog`
+`C` · `C++` · `Python` · `Tcl` · `Bash` · `Verilog` · `SystemVerilog`
 
 ### Verification
 
-`UVM` · `Constrained-Random Verification` · `SVA` · `Functional Coverage` · `RAL` · `Scoreboards` · `Regression`
+`UVM` · `Constrained-Random Verification` · `SVA` · `Functional Coverage` · `Assertion Coverage` · `RAL` · `Scoreboards` · `Mutation Testing` · `Regression`
 
 ### Protocols
 
@@ -172,11 +181,11 @@ I'm currently looking for **full-time Design Verification Engineer opportunities
 
 ### Formal / CDC
 
-`SymbiYosys` · `Yosys` · `Clock Domain Crossing` · `Gray-Code Synchronization`
+`VC Formal` · `VC Static / SpyGlass CDC` · `SymbiYosys` · `Yosys` · `Clock Domain Crossing` · `Gray-Code Synchronization` · `Counterexample Debugging`
 
 ### Tools
 
-`Synopsys VCS` · `Cadence Xcelium` · `Verdi` · `Design Compiler` · `Genus` · `Innovus` · `Xilinx Vivado` · `Git`
+`Synopsys VCS` · `Synopsys URG` · `Verdi` · `VC Formal` · `VC Static / SpyGlass CDC` · `Cadence Xcelium` · `Design Compiler` · `Genus` · `Innovus` · `Xilinx Vivado` · `Git` · `Linux`
 
 </div>
 
@@ -217,8 +226,8 @@ Graduated **April 2024**
 
 - 🔍 Seeking **Full-Time Design Verification Engineer** opportunities
 - 🎓 Completing my **MS in Computer Engineering at NYU**
-- 🧪 Building verification projects across **UVM, SVA, Formal Verification, CDC, and constrained-random testing**
-- 🐍 Using **Python** to automate verification and regression workflows
+- 🧪 Applying **UVM, SVA, Formal Verification, CDC, mutation testing, and constrained-random verification** across hardware projects
+- 🐍 Using **Python and Bash** to automate simulations, regressions, results analysis, and coverage collection
 - 📚 Continuing to strengthen digital design, computer architecture, and verification fundamentals
 
 ---
